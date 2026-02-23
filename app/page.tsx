@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export async function getData() {
-  const res = await fetch('http://localhost:8000/data');
+  const res = await fetch('https://science-simplified-api-production.up.railway.app/data');
   const data = await res.json();
 
   return data;
